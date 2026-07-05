@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Impulse Lockdown: SDG 3 Intervention Engine",
+  "version": "1.0.0",
+  "description": "Isolates food-delivery applications to enforce active cognitive evaluation metrics or kinetic tracking breakout protocols.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.swiggy.com/*",
+        "https://www.zomato.com/*"
+      ],
+      "js": [
+        "ml5.min.js",
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Impulse Lockdown Active"
+  }
+}
