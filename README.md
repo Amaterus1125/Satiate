@@ -1,19 +1,72 @@
-# Impulse Lockdown: An SDG 3 Behavioral Intervention System
+# Satiate
 
-An aggressive, high-friction browser extension designed to disrupt impulsive junk food ordering habits. By enforcing a literal 5-minute cool-down period and demanding the resolution of an embedded lower-level programming puzzle, this application promotes mindfulness and long-term metabolic health.
+## Overview
+**Satiate: Impulse Lockdown** is an SDG 3 (Good Health and Well-being) behavioral intervention tool. Designed as a Chrome extension, this repository contains the core codebase required to build, run, and extend the application to curb compulsive digital habits and foster mental clarity through real-time behavioral friction.
 
-## 🎯 SDG 3 Alignment: Good Health & Well-being
-Modern food delivery platforms use dark patterns and frictionless UI to encourage immediate gratification and poor dietary choices. This project introduces deliberate, cognitive friction back into the loop to target:
-* **Section 3.4:** Reducing non-communicable diseases through preventative behavioral modification.
-* **Mindful Consumption:** Forcing a cognitive break between the impulse to order junk food and the final transaction execution.
+---
 
-## 🛠️ Technical Implementation
-* **Architecture:** Chrome Manifest V3 Content Script Execution Engine.
-* **Core Logic:** Built a custom, deterministic Brainfuck esoteric language interpreter from scratch in pure JavaScript.
-* **UI/UX:** High-contrast, hardware-accelerated dark theme overlay designed to isolate the active tab layout until compilation conditions are satisfied.
+## Key Features
+- **Active Lockdown Shield:** Monitors web activity to intercept pre-defined impulsive triggers immediately.
+- **Customizable Friction Levels:** Users can configure how intense the behavioral intervention needs to be through a dedicated settings panel.
+- **Seamless Browser Integration:** Runs silently in the background as a lightweight companion, stepping in only when digital well-being is at risk.
 
-## 🚦 How to Run Locally
-1. Clone this repository.
-2. Open Google Chrome and navigate to `chrome://extensions/`.
-3. Enable **Developer Mode** in the top-right corner.
-4. Click **Load unpacked** and select this directory.
+---
+
+## Tech Stack
+- **Language(s):** JavaScript, HTML, CSS
+- **Framework(s):** Vanilla JS (Chrome Extension API)
+- **Backend:** N/A (Client-side execution)
+- **Frontend:** HTML/CSS (Options interface)
+- **Database:** Chrome Local Storage (`chrome.storage`)
+- **Infrastructure / Deployment:** Google Chrome (Developer Mode / Web Store)
+- **Testing framework(s):** Manual browser testing
+
+---
+
+## Project Architecture
+The repository follows a standard Chrome Extension Manifest V3 architecture, separating background permissions, content scripts, and user configurations. 
+
+- **Entry points / Application bootstrap**
+  - `manifest.json` (The Core: Manifest V3 architecture securely requesting declarative permissions)
+- **Core domain / business logic**
+  - `content.js` (The Gatekeeper: Programmatically injects behavioral scripts directly into target pages to catch impulses)
+- **Configuration & User Interface**
+  - `options.html` (The Control Center: A user-friendly dashboard allowing individuals to personalize blocklists and timers)
+
+---
+
+## Installation
+
+### Prerequisites
+- Install **Google Chrome** (or any modern Chromium-based browser like Brave or Edge)
+- Ensure you have **Git** installed to clone the repository
+
+### Setup Steps
+```bash
+# 1) Clone the repository
+git clone [https://github.com/Amaterus1125/Satiate.git](https://github.com/Amaterus1125/Satiate.git)
+cd Satiate
+
+# 2) Open Chrome Extensions Manager
+# Navigate to chrome://extensions/ in your browser address bar
+
+# 3) Enable Developer Mode
+# Toggle the "Developer mode" switch in the top right corner
+
+# 4) Load the Extension
+# Click "Load unpacked" and select the cloned "Satiate" folder
+
+```
+## Usage
+### Running the Extension
+Once loaded into Chrome as an unpacked extension, Satiate will automatically activate based on your manifest.json rules.
+ * **Configure Settings:** Click the Satiate extension icon in your browser toolbar and open the options page to set your trigger sites and friction preferences.
+ * **Trigger Interception:** Navigate to any of the domains you configured as "impulses." content.js will automatically deploy the behavioral friction protocols.
+### Common Commands
+ * **Refresh Extension:** If you edit content.js or manifest.json, return to chrome://extensions/ and click the refresh icon on the Satiate card.
+ * **Inspect UI:** Right-click inside options.html and select "Inspect" to debug the frontend styling and storage logic.
+## Contributing
+To contribute to Satiate, please branch off of main and submit a Pull Request. Ensure that any new permissions added to manifest.json strictly align with user privacy and minimal-access principles.
+## License
+Please refer to the repository settings for specific licensing details regarding distribution and modification of this codebase.
+*This README was generated with PresentMe. View the full presentation here.*
