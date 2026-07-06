@@ -69,4 +69,5 @@ Once loaded into Chrome as an unpacked extension, Satiate will automatically act
 To contribute to Satiate, please branch off of main and submit a Pull Request. Ensure that any new permissions added to manifest.json strictly align with user privacy and minimal-access principles.
 ## License
 Please refer to the repository settings for specific licensing details regarding distribution and modification of this codebase.
-*This README was generated with PresentMe. View the full presentation here -- https://www.presentmeapp.xyz/p/e5b21e13-ca6b-4868-b420-ac6cb06fe112.*
+*This README was generated with PresentMe. View the full presentation here -- https://www.presentmeapp.xyz/p/e5b21e13-ca6b-4868-b420-ac6cb06fe112.
+MIT - do anything you like.
